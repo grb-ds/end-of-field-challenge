@@ -1,0 +1,250 @@
+
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #ececec;
+}
+
+#mockup {
+    /*width: 1000px;
+    height: 516px;*/
+    width: 1380px;
+    height: 100%;
+   /* background-image: url(https://raw.githubusercontent.com/becodeorg/gnt-yu-3-21/master/1.The-Field/5.End-of-Field/1.Trial-Run/images/13.ui-chart-2.png?token=AAFTYPC4SCNSITCGMEUCNLS7BBK7I);
+*/
+    /*background-color: #ececec;*/
+
+    /*position: absolute;
+    top: 0;
+    left: 0;*/
+
+    /*opacity: 0.5;*/
+    z-index: 10;
+    /*pointer-events: none;*/
+
+
+}
+
+.container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content: center;
+    /*margin-left: 10px;*/
+
+}
+
+.container-row{
+    align-items:center;
+    justify-content:center;
+}
+
+.item {
+    /*flex: 0 0 calc(45% - 10px);*/
+    box-sizing: border-box;
+   /* margin-left: 10px;*/
+    margin-top: 10px;
+}
+
+.item-row {
+    flex: 0 0 calc(40% - 10px);
+    display: flex;
+    align-items: stretch;
+/*    max-width: 800px;
+    border: 1px solid #AAB3AB;*/
+    flex-wrap: wrap;
+}
+
+.item-image-row {
+    display:flex;
+    flex: 0 1 calc(40% - 10px);
+    margin: 0 0;
+}
+
+.item-image{
+   /* background-color: #e8e8e8;*/
+   /* width: 100%;
+    height: 100%;*/
+}
+
+.item-body-column{
+    padding: 10px 30px;
+    /*flex:1;*/
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 calc(45% - 10px);
+
+}
+
+.item-title{
+    font-family: "Lucida Sans";
+}
+
+.item-text{
+    font-size:18px;
+    color:#7a7a7a;
+
+    font-family: "Calibri";
+}
+
+/*widget {
+    /* width: calc(332px - 24px - 24px - 6px - 6px); * /
+    width: calc(332px - 6px - 6px);
+    height: calc(516px - 6px - 6px);
+    margin: 6px;
+    background-color: #568DE9;
+    padding: 24px;
+    color: white;
+}*/
+
+.card {
+/* width: calc(332px - 24px - 24px - 6px - 6px); */
+    flex: 1 0 calc(25% - 6px - 6px);
+    width: calc(25% - 6px - 6px);
+    height: calc(600px - 6px - 6px);
+    margin: 6px;
+  /*  background-color: white;*/
+    padding: 24px;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+.card-header,
+.card-footer,
+.card-image,
+.card-body{
+    background-color: white;
+    text-align: center;
+    width:300px;
+    padding: 0 37px 0 37px;
+}
+
+.card-header,
+.card-footer{
+    height: 10%;
+    font-family: sans-serif;
+}
+.card-image,
+.card-body{
+    /*height: 40%;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image{
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.car-body{
+    display:flex;
+    height: 250px;
+
+    /*display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 40%;*/
+}
+
+.card-body-text{
+    font-family: Calibri, serif;
+    color: #5a6268;
+
+}
+
+
+
+.card-body-social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    margin: 20px 50px 0 50px;
+    color: #5a6268;
+    width:120px;
+}
+.icon{
+    margin: 5px;
+    width: 18px;
+    height: 18px;
+}
+
+.card-header{
+    border-radius: 50px 50px 0 0;
+    border-bottom: 1px;
+    margin: 0 0 2px 0;
+}
+.card-footer{
+    border-radius: 0 0 50px 50px;
+    border-top: 1px;
+
+}
+
+.card-image img{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    font-family: Caladea,sans-serif;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        flex: 1 0 calc(25% - 6px - 6px);
+    }
+    .item-row {
+        flex: 0 0 calc(90% - 10px);
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+}
+
+.button-main {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: dodgerblue;
+    background-color: #4CAFFF;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button-main:hover {background-color: lawngreen}
+
+.button-main:active {
+    background-color: blueviolet;
+    box-shadow: 0 5px #555;
+    transform: translateY(4px);
+}
