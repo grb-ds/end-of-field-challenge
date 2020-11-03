@@ -4,7 +4,7 @@
 
 ### About Challenger
 
-- Repository name: [End-of-field-challenge](https://grb-ds.github.io/end-of-field-challenge/)
+- URL Repository: [End-of-field-challenge](https://grb-ds.github.io/end-of-field-challenge/)
 - Languages: HTML + CSS
 - Type of Challenge: Consolidation of basic and complex interface with CSS
 - Description: In this exercise you will build two full integrations.
